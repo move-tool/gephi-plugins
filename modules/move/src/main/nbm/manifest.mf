@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+OpenIDE-Module-Localizing-Bundle: org/activeintel/gephi/network/optimization/genetic/ui/Bundle.properties
+OpenIDE-Module-Short-Description: short description
+OpenIDE-Module-Long-Description: long description
+OpenIDE-Module-Display-Category: Tool
