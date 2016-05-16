@@ -1,3 +1,5 @@
 .DS_Store
 **/target/**
 /target/
+!modules/move/target/*.nbm
+!modules/move/target/*.jar
