@@ -2,6 +2,11 @@
 
 TODO
 
+TODO: link to presentation
+TODO: link to paper
+
+...
+
 # Installation
 
 Download Gephi (ver. 0.9+): https://gephi.org
@@ -23,6 +28,8 @@ see general instructions on how plugins are developed and managed: https://githu
 
 Plugin's source is in: https://github.com/move-tool/gephi-plugins/tree/master/modules/move
 
-Plugin relies on additional modules which would need to be installed in a local maven repository:
+Plugin relies on additional module which would need to be installed in a local maven repository:
 
 * https://bitbucket.org/neil_rubens/genetic-network-optimization/
+
+
