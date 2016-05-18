@@ -16,11 +16,14 @@
 
 
   <dependencies>
+    
+      <!-- https://bitbucket.org/neil_rubens/genetic-network-optimization/ -->  
       <dependency>
       <groupId>org.activeintel</groupId>
       <artifactId>genetic-network-optimization</artifactId>
       <version>1.3-SNAPSHOT</version>
     </dependency>
+    
         <dependency>
             <groupId>org.uncommons.watchmaker</groupId>
             <artifactId>watchmaker-swing</artifactId>
