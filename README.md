@@ -38,6 +38,39 @@ To see MOVE's UI; in the menu bar select `Window/NetworkOptimizationPanel`.
 
 ![UI](docs/img/move-main.png)
 
+## Defining Criteria
+
+There are two tabs that allow to specify your criteria.
+
+### Criteria Tab
+
+`Criteria` tab allows to specify some basic criteria (# of nodes);
+as well as `utitility` oriented criteria; annotation costs are represented by negative numbers.
+
+![tab](docs/move-criteria-tab.png)
+
+
+### Metrics Tab
+
+`Metrics` tab allows to specify how desirable certain characteristics are (e.g. number of links).
+
+![tab](docs/img/move-metrics-tab.png)
+
+You can use any of your node's properties as metrics (you can see them in the `Data Laboratory` view);
+as well as numerous network metrics which are available via menu bar `Window / Statistics` (additional metrics could be added via plugins).
+
+![tab](docs/img/gephi-statistics-tab.png)
+
+You need to `Re-Initialize` the graph before the metrics could be used to define your criteria.
+
+
+## Optimisation Tab
+
+`Optimisation` tab is used to define the parameters for optimisation; initially you can just use the default values; and then adjust them.
+
+## Display Tab
+
+`Display` tab allows you to configure visual aspects of the MOVE tool.
 
 
 
