@@ -4,287 +4,81 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Gephi-plugins by move-tool</title>
-
     <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
     <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
   </head>
   <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/move-tool/gephi-plugins">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/move-tool/gephi-plugins/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/move-tool/gephi-plugins/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
     <div class="wrapper">
-      <header>
-        <h1>Gephi-plugins</h1>
-        <p>Repository for Gephi Plugins maintained by the team. Each plugin has it&#39;s branch.</p>
 
-        <p class="view"><a href="https://github.com/move-tool/gephi-plugins">View the Project on GitHub <small>move-tool/gephi-plugins</small></a></p>
-
-
-        <ul>
-          <li><a href="https://github.com/move-tool/gephi-plugins/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/move-tool/gephi-plugins/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/move-tool/gephi-plugins">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
       <section>
+        <div id="title">
+          <h1>Gephi-plugins</h1>
+          <p>Repository for Gephi Plugins maintained by the team. Each plugin has it&#39;s branch.</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/move-tool">move-tool</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
         <h1>
-<a id="gephi-plugins" class="anchor" href="#gephi-plugins" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Gephi Plugins</h1>
+<a id="description" class="anchor" href="#description" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Description</h1>
 
-<p>This repository is an out-of-the-box development environment for Gephi plugins. Gephi plugins are implemented in Java and can extend <a href="https://gephi.org">Gephi</a> in many different ways, adding or improving features. Getting started is easy with this repository but also checkout the <a href="https://github.com/gephi/gephi-plugins-bootcamp">Bootcamp</a> for examples of plugins you can create. </p>
+<p>TODO</p>
 
-<h2>
-<a id="migrate-gephi-08-plugins" class="anchor" href="#migrate-gephi-08-plugins" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Migrate Gephi 0.8 plugins</h2>
+<p>TODO: link to presentation
+TODO: link to paper</p>
 
-<p>The process in which plugins are developed and submitted had an overhaul when Gephi 0.9 was released. Details can be read on this article: <a href="https://gephi.wordpress.com/2015/12/16/plugin-development-gets-new-tools-and-opens-up-to-the-community/">Plugin development gets new tools and opens-up to the community</a>.</p>
+<p>...</p>
 
-<p>This section is a step-by-step guide to migrate 0.8 plugins. Before going through the code and configuration, let's summerize the key differences between the two environements.</p>
+<h1>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h1>
 
-<ul>
-<li>The 0.8 base is built using Ant, whereas the 0.9 uses Maven. These two are significantly different. If you aren't familiar with Maven, you can start with <a href="https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html">Maven in 5 Minutes</a>. Maven configurations are defined in the <code>pom.xml</code> files.</li>
-<li>The 0.8 base finds the Gephi modules into the <code>platform</code> folder checked in the repository, whereas the 0.9 base downloads everything from the central Maven repository, where all Gephi modules are available.</li>
-<li>Maven requires to separate source files (e.g. .java) and resources files (e.g. .properties) into distinct folders. Sources are located in <code>src/main/java</code> and resources in <code>src/main/resources</code>.</li>
-</ul>
+<p>Download Gephi (ver. 0.9+): <a href="https://gephi.org">https://gephi.org</a></p>
 
-<p>A custom <code>migrate</code> goal is available in the <a href="https://github.com/gephi/gephi-maven-plugin">Gephi Maven Plugin</a> to facilitate the migration from 0.8 to 0.9. This automated process migrates ant-based plugins to maven and takes care of copying the configuration and code. Follow these steps to migrate your plugin:</p>
+<p>Download MOVE plugin: <a href="https://github.com/move-tool/gephi-plugins/raw/master/modules/move/target/move-1.0.0.nbm">https://github.com/move-tool/gephi-plugins/raw/master/modules/move/target/move-1.0.0.nbm</a></p>
 
-<ul>
-<li>
-<p>Fork and checkout this repository:</p>
+<p>Do a manual plugin install: <a href="https://marketplace.gephi.org/how-to-install-a-plugin/">https://marketplace.gephi.org/how-to-install-a-plugin/</a></p>
 
-<pre><code>git clone git@github.com:username/gephi-plugins.git
-</code></pre>
-</li>
-</ul>
+<h1>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h1>
 
-<p>If you've already had a forked repository based on 0.8 we suggest to save your code somewhere, delete it and fork again as the history was cleared.</p>
+<p>Start Gephi, in the menu bar select <code>Window/NetworkOptimizationPanel</code></p>
 
-<ul>
-<li><p>Copy your plugin folder at the root of this directory.</p></li>
-<li>
-<p>Run this command:</p>
+<h1>
+<a id="development" class="anchor" href="#development" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Development</h1>
 
-<pre><code>mvn org.gephi:gephi-maven-plugin:migrate
-</code></pre>
-</li>
-</ul>
+<p>MOVE is a plugin for gephi; 
+see general instructions on how plugins are developed and managed: <a href="https://github.com/gephi/gephi-plugins">https://github.com/gephi/gephi-plugins</a></p>
 
-<p>This command will detect the ant-based plugin and migrate it. The resulting folder is then located into the <code>modules</code> folder.</p>
+<p>Plugin's source is in: <a href="https://github.com/move-tool/gephi-plugins/tree/master/modules/move">https://github.com/move-tool/gephi-plugins/tree/master/modules/move</a></p>
 
-<p>The plugin code can then be inspected in Netbeans or built via command line with <code>mvn clean package</code>.</p>
-
-<h2>
-<a id="get-started" class="anchor" href="#get-started" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Get started</h2>
-
-<h3>
-<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Requirements</h3>
-
-<p>Developing Gephi plugins requires <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">JDK 7</a> or later and <a href="http://maven.apache.org/">Maven</a>. Although any IDE/Editor can be used, <a href="https://netbeans.org/">Netbeans IDE</a> is recommend as Gephi itself is based on <a href="https://netbeans.org/features/platform/index.html">Netbeans Platform</a>.</p>
-
-<h3>
-<a id="create-a-plugin" class="anchor" href="#create-a-plugin" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Create a plugin</h3>
-
-<p>The creation of a new plugin is simple thanks to our custom <a href="https://github.com/gephi/gephi-maven-plugin">Gephi Maven Plugin</a>. The <code>generate</code> goal asks a few questions and then configures everything for you.</p>
+<p>Plugin relies on additional module which would need to be installed in a local maven repository:</p>
 
 <ul>
-<li>
-<p>Fork and checkout the latest version of this repository:</p>
-
-<pre><code>git clone git@github.com:username/gephi-plugins.git
-</code></pre>
-</li>
-<li>
-<p>Run the following command and answer the questions:</p>
-
-<pre><code>mvn org.gephi:gephi-maven-plugin:generate
-</code></pre>
-</li>
+<li><a href="https://bitbucket.org/neil_rubens/genetic-network-optimization/">https://bitbucket.org/neil_rubens/genetic-network-optimization/</a></li>
 </ul>
-
-<p>This is an example of what this process will ask:</p>
-
-<pre><code>    Name of organization (e.g. my.company): org.foo
-    Name of artifact (e.g my-plugin): my-plugin
-    Version (e.g. 1.0.0): 1.0.0
-    Directory name (e.g MyPlugin): MyPlugin
-    Branding name (e.g My Plugin): My Plugin
-    Category (e.g Layout, Filter, etc.): Layout
-    Author: My Name
-    Author email (optional):
-    Author URL (optional):
-    License (e.g Apache 2.0): Apache 2.0
-    Short description (i.e. one sentence): Plugin catch-phrase
-    Long description (i.e multiple sentences): Plugin features are great
-    Would you like to add a README.md file (yes|no): yes
-</code></pre>
-
-<p>The plugin configuration is created. Now you can (in any order):</p>
-
-<ul>
-<li>Add some Java code in the <code>src/main/java</code> folder of your plugin</li>
-<li>Add some resources (e.g. Bundle.properties, images) into the <code>src/main/resources/</code> folder of your plugin</li>
-<li>Change the version, author or license information into the <code>pom.xml</code> file, which is in your plugin folder</li>
-<li>Edit the description or category details into the <code>src/main/nbm/manifest.mf</code> file in your plugin folder </li>
-</ul>
-
-<h3>
-<a id="build-a-plugin" class="anchor" href="#build-a-plugin" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Build a plugin</h3>
-
-<p>Run the following command to compile and build your plugin:</p>
-
-<pre><code>   mvn clean package
-</code></pre>
-
-<p>In addition of compiling and building the JAR and NBM, this command uses the <code>Gephi Maven Plugin</code> to verify the plugin's configuration. In care something is wrong it will fail and indicte the reason.</p>
-
-<h3>
-<a id="run-gephi-with-plugin" class="anchor" href="#run-gephi-with-plugin" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Run Gephi with plugin</h3>
-
-<p>Run the following command to run Gephi with your plugin pre-installed. Make sure to run <code>mvn package</code> beforehand to rebuild.</p>
-
-<pre><code>   mvn org.gephi:gephi-maven-plugin:run
-</code></pre>
-
-<p>In Gephi, when you navigate to <code>Tools</code> &gt; <code>Plugins</code> you should see your plugin listed in <code>Installed</code>.</p>
-
-<h2>
-<a id="submit-a-plugin" class="anchor" href="#submit-a-plugin" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Submit a plugin</h2>
-
-<p>Submitting a Gephi plugin for approval is a simple process based on GitHub's <a href="https://help.github.com/articles/using-pull-requests/">pull request</a> mechanism.</p>
-
-<ul>
-<li><p>First, make sure you're working on a fork of <a href="https://github.com/gephi/gephi-plugins">gephi-plugins</a>. You can check that by running <code>git remote -v</code> and look at the url, it should contain your GitHub username, for example <code>git@github.com:username/gephi-plugins.git</code>.</p></li>
-<li><p>Add and commit your work. It's recommended to keep your fork synced with the upstream repository, as explained <a href="https://help.github.com/articles/syncing-a-fork/">here</a>, so you can run <code>git merge upstream/master</code> beforehand.</p></li>
-<li><p>Push your commits to your fork with <code>git push origin master</code>.</p></li>
-<li><p>Navigate to your fork's URL and create a pull request. Select <code>master-forge</code> instead of <code>master</code> as base branch.</p></li>
-<li><p>Submit your pull request.</p></li>
-</ul>
-
-<h2>
-<a id="update-a-plugin" class="anchor" href="#update-a-plugin" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Update a plugin</h2>
-
-<p>Updating a Gephi plugin has the same process as submiting it for the first time. Don't forget to merge from upstream's master branch.</p>
-
-<h2>
-<a id="ide-support" class="anchor" href="#ide-support" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>IDE Support</h2>
-
-<h3>
-<a id="netbeans-ide" class="anchor" href="#netbeans-ide" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Netbeans IDE</h3>
-
-<ul>
-<li>Start Netbeans and go to <code>File</code> and then <code>Open Project</code>. Navigate to your fork repository, Netbeans automatically recognizes it as Maven project. </li>
-<li>Each plugin module can be found in the <code>Modules</code> folder.</li>
-</ul>
-
-<p>To run Gephi with your plugin pre-installed, right click on the <code>gephi-plugins</code> project and select <code>Run</code>.</p>
-
-<p>To debug Gephi with your plugin, right click on the <code>gephi-plugins</code> project and select <code>Debug</code>.</p>
-
-<h3>
-<a id="intellij-idea" class="anchor" href="#intellij-idea" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>IntelliJ IDEA</h3>
-
-<ul>
-<li>Start IntelliJ and <code>Open</code> the project by navigating to your fork repository. IntelliJ may prompt you to import the Maven project, select yes.</li>
-</ul>
-
-<p>To run Gephi with your plugin pre-installed when you click <code>Run</code>, create a <code>Maven</code> run configuration and enter <code>org.gephi:gephi-maven-plugin:run</code> in the command field. The working directory is simply the current project directory.</p>
-
-<p>To debug Gephi with your plugin, create a <code>Remote</code> configuration and switch the <code>Debugger mode</code> option to <code>Listen</code>. Then create a <code>Maven</code> run configuration like abobe but add <code>-Drun.params.debug="-J-Xdebug -J-Xnoagent -J-Xrunjdwp:transport=dt_socket,suspend=n,server=n,address=5005"</code> into the <code>Runner</code> &gt; <code>VM Options</code> field. Then, go to the <code>Run</code> menu and first run debug with the remote configuration and then only run debug with the Maven configuration.</p>
-
-<h2>
-<a id="faq" class="anchor" href="#faq" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>FAQ</h2>
-
-<h4>
-<a id="what-kind-of-plugins-can-i-create" class="anchor" href="#what-kind-of-plugins-can-i-create" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What kind of plugins can I create?</h4>
-
-<p>Gephi can be extended in many ways but the major categories are <code>Layout</code>, <code>Export</code>, <code>Import</code>, <code>Data Laboratory</code>, <code>Filter</code>, <code>Generator</code>, <code>Metric</code>, <code>Preview</code>, <code>Tool</code>, <code>Appearance</code> and <code>Clustering</code>. A good way to start is to look at examples with the <a href="https://github.com/gephi/gephi-plugins-bootcamp">bootcamp</a>.</p>
-
-<h4>
-<a id="in-which-language-can-plugins-be-created" class="anchor" href="#in-which-language-can-plugins-be-created" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>In which language can plugins be created?</h4>
-
-<p>Plugins can use any JVM languages (e.g. Scala, Python, Groovy) but the default option is Java. </p>
-
-<h4>
-<a id="can-native-librairies-be-used" class="anchor" href="#can-native-librairies-be-used" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Can native librairies be used?</h4>
-
-<p>Yes, native librairies can be used in modules.</p>
-
-<h4>
-<a id="how-is-this-repository-structured" class="anchor" href="#how-is-this-repository-structured" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How is this repository structured?</h4>
-
-<p>The <code>modules</code> folder is where plugin modules go. Each plugin is defined in a in single folder in this directory. A plugin can be composed of multiple modules (it's called a suite then) but usually one is enough to do what you want.</p>
-
-<p>The <code>pom.xml</code> file in <code>modules</code> is the parent pom for plugins. A Maven pom can inherit configurations from a parent and that is something we use to keep each plugin's pom very simple. Notice that each plugin's pom (i.e. the <code>pom.xml</code> file in the plugin folder) has a <code>&lt;parent&gt;</code> defined.</p>
-
-<p>The <code>pom.xml</code> file at the root folder makes eveything fit together and notably lists the modules.</p>
-
-<h4>
-<a id="how-are-the-manifest-settings-defined" class="anchor" href="#how-are-the-manifest-settings-defined" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How are the manifest settings defined?</h4>
-
-<p>There are two options. The first option is what the <code>generate</code> task does: it puts entries <code>OpenIDE-Module-Short-Description</code>, <code>OpenIDE-Module-Long-Description</code>, <code>OpenIDE-Module-Display-Category</code> and <code>OpenIDE-Module-Name</code> into the <code>src/main/nbm/manifest.mf</code> file. The second option sets a <code>
-OpenIDE-Module-Localizing-Bundle</code> entry into the <code>manifest.mf</code> so values are defined elsewhere in <code>Bundle.properties</code> file. The value is then simply the path to the file (e.g. <code>OpenIDE-Module-Localizing-Bundle: org/project/Bundle.properties</code>).</p>
-
-<p>The second option is preferable when the short or long description have too many characters as the manifest format is pretty restrictive.  </p>
-
-<h4>
-<a id="how-to-add-a-new-module" class="anchor" href="#how-to-add-a-new-module" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to add a new module?</h4>
-
-<p>This applies for suite plugins with multiple modules. Besides creating the module folder, edit the <code>pom.xml</code> file and add the folder path to <code>&lt;modules&gt;</code>, like in this example:</p>
-
-<pre><code>    &lt;!-- List of modules --&gt;
-    &lt;modules&gt;
-        &lt;!-- Add here the paths of all modules (e.g. &lt;module&gt;modules/MyModule&lt;/module&gt;) --&gt;
-        &lt;module&gt;modules/ExampleModule&lt;/module&gt; 
-    &lt;/modules&gt;
-</code></pre>
-
-<h4>
-<a id="where-are-dependencies-configured" class="anchor" href="#where-are-dependencies-configured" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Where are dependencies configured?</h4>
-
-<p>Dependencies are configured in the <code>&lt;dependencies&gt;</code> section in the plugin folder's <code>pom.xml</code>. Each dependency has a <code>groupId</code>, an <code>artifactId</code> and a <code>version</code>. There are three types of dependencies a plugin can have: an external library, a Gephi module or a Netbeans module.</p>
-
-<p>The list of Gephi and Netbeans dependencies one can use can be found in the <code>modules/pom.xml</code> file. All possible dependencies are listed in the <code>&lt;dependencyManagement&gt;</code> section. Because each plugin module inherits from this parent pom the version can be omitted when the dependency is set. For instance, this is how a plugin depends on <code>GraphAPI</code> and Netbeans's <code>Lookup</code>.</p>
-
-<pre><code>&lt;dependencies&gt;
-     &lt;dependency&gt;
-         &lt;groupId&gt;org.netbeans.api&lt;/groupId&gt;
-         &lt;artifactId&gt;org-openide-util-lookup&lt;/artifactId&gt;
-     &lt;/dependency&gt;
-     &lt;dependency&gt;
-         &lt;groupId&gt;org.gephi&lt;/groupId&gt;
-         &lt;artifactId&gt;graph-api&lt;/artifactId&gt;
-    &lt;/dependency&gt;
-&lt;/dependencies&gt;
-</code></pre>
-
-<h4>
-<a id="what-are-public-packages-for" class="anchor" href="#what-are-public-packages-for" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What are public packages for?</h4>
-
-<p>This applies for suite plugins with multiple modules. A module should declare the packages it wants to nake accessible to other modules. For instance, if a module <code>B</code> depends on the class <code>my.org.project.ExampleController</code> defined in a module <code>A</code>, the <code>A</code> module should declare <code>my.org.project</code> as public package.</p>
-
-<p>Public packages are configured in the module's <code>pom.xml</code> file. Edit the <code>&lt;publicPackages&gt;</code> entry. Example:</p>
-
-<pre><code>&lt;publicPackages&gt;
-    &lt;publicPackage&gt;my.org.project&lt;/publicPackage&gt;
-&lt;/publicPackages&gt;
-</code></pre>
-
-<h4>
-<a id="what-is-the-difference-between-plugin-and-module" class="anchor" href="#what-is-the-difference-between-plugin-and-module" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What is the difference between plugin and module?</h4>
-
-<p>It's the same thing. We say module because Gephi is a modular application and is composed of many independent modules. Plugins also are modules but we call them plugin because they aren't in the <em>core</em> Gephi.</p>
-
-<h4>
-<a id="when-running-the-plugin-in-netbeans-i-get-an-error-running-standalone-modules-or-suites-requires" class="anchor" href="#when-running-the-plugin-in-netbeans-i-get-an-error-running-standalone-modules-or-suites-requires" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>When running the plugin in Netbeans I get an error "Running standalone modules or suites requires..."</h4>
-
-<p>This error appears when you try to run a module. To run Gephi with your plugin you need to run the <code>gephi-plugins</code> project, not your module.</p>
       </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/move-tool">move-tool</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+
     </div>
-    <script src="javascripts/scale.fix.js"></script>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
   </body>
 </html>
