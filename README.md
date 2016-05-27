@@ -47,7 +47,7 @@ There are two tabs that allow to specify your criteria.
 `Criteria` tab allows to specify some basic criteria (# of nodes);
 as well as `utitility` oriented criteria; annotation costs are represented by negative numbers.
 
-![tab](docs/move-criteria-tab.png)
+![tab](docs/img/move-criteria-tab.png)
 
 
 ### Metrics Tab
